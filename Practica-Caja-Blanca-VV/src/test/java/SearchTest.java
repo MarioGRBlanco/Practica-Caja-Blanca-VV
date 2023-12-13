@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 
-/*
+/* CONSULTAR DOCUMENTO GRAFOS.
 5 caminos Independientes:
     1. 1-2.A-3                  -> aux == null.
     2. 1-2.A-2.B-3              -> aux != null && enc == true. *1
@@ -15,8 +15,8 @@ import java.util.ArrayList;
     5. 1-2.A-2.B-4-6-8-2.A-3    -> aux != null && enc == false && content > auxContent
 
 *1: Dado que enc se inicializa a false y el nodo 1 solo se visita una sola vez,
-no es posible en la práctica seguir este camino. Sin embargo, estas aristas quedan probadas
-en el camino 3, ya que dentro del if se establece enc == true.
+no es posible en la práctica seguir este camino. Sin embargo, estas aristas quedan prob-
+-adas en el camino 3, ya que dentro del if se establece enc == true.
  */
 public class SearchTest {
     BST<Integer> bst;
